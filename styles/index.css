@@ -1,0 +1,64 @@
+body {
+    background-color: lightgoldenrodyellow;
+    min-height: 90vh; /* should I always put this in every project? my thought is that this akready is default?*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+.welcome-heading { /*animation.css ease-in-out*/
+    text-align: center;
+}
+
+h1 {
+    background-color: antiquewhite;
+}
+
+h2 {
+    background-color:aqua;
+}
+
+h3 {
+    background-color:blueviolet;
+}
+
+h5 {
+    background-color: gold;
+}
+
+.picture-container { /*keyframes scroll*/
+    background-color: green;
+    /* max-height: 20vh; */
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.picture-container-box {
+    background-color: #fff;
+}
+
+img { /*scale transition*/
+    width: 200px;
+    /* height: 100%; */
+    margin: 20px;
+}
+
+.paragraph-container {
+    max-width: 35vw;
+}
+
+.btn-container {
+    background-color: brown;
+}
