@@ -1,5 +1,5 @@
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: #FFEEE2;
     min-height: 90vh; /* should I always put this in every project? my thought is that this akready is default?*/
     display: flex;
     justify-content: center;
@@ -21,44 +21,121 @@ div {
 }
 
 h1 {
-    background-color: antiquewhite;
+    font-family: 'Parisienne';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 89px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #663714;
+    margin-bottom: -10px;    
 }
 
 h2 {
-    background-color:aqua;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 54px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #805B40;
+    margin-bottom: -20px;
 }
 
-h3 {
-    background-color:blueviolet;
+h4 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    letter-spacing: 0.7em;
+    color: #805B40;
+    /* margin-bottom: -20px; */
 }
 
 h5 {
-    background-color: gold;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #805B40;
+    margin-bottom: -20px;
 }
 
 .picture-container { /*keyframes scroll*/
-    background-color: green;
     /* max-height: 20vh; */
     /* width: 100vw; */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    animation-name: example
 }
+
+@keyframes example {
+    from {right: 0px;}
+    to {right: 200px;}
+  }
 
 .picture-container-box {
     background-color: #fff;
+    /* animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards; */
 }
 
 img { /*scale transition*/
     width: 200px;
     /* height: 100%; */
     margin: 20px;
+    animation: imgZoom;
+}
+
+@keyframes imgZoom { /*does not work */
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
 }
 
 .paragraph-container {
-    max-width: 35vw;
+    max-width: 45vw;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    /* or 170% */
+
+    text-align: center;
+    letter-spacing: 0.5em;
+
+    color: #33241A;
 }
 
 .btn-container {
-    background-color: brown;
+    max-width: 45vw;
+    margin-bottom: 60px;
 }
+
+button { /* definite width and height on butons? */
+    width: 154px;
+    height: 43px;
+    margin: 30px;
+    background: #805B40;
+    border-radius: 30px;
+    border: hidden;
+}
+
+button:hover {
+    background-color: green;
+    transition: all 0.9s ease-in-out;
+}
+
+:root {
+    --animate-duration: 10s;
+    --animate-delay: 3s;
+  }
